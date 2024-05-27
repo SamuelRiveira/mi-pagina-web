@@ -411,14 +411,28 @@ body{
 
 /* ALREDEDORES */
 
-
-#alrededores{
+#alrededores{ 
     width: 100%;
     height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#alrededores h3{
+    margin-bottom: 5%;
+}
+
+
+#contenedor-lugares{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    background-color: lightskyblue;
+    gap: 2%;
+}
+
+#cercania{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
 }
 
 

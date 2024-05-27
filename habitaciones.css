@@ -421,3 +421,15 @@ body{
 body{
     margin-top: 18%;
 }
+
+@media (max-width: 1655px) {
+    body{
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 1450px) {
+    body{
+        margin-top: 25%;
+    }
+}

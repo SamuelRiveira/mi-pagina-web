@@ -421,6 +421,10 @@ body{
     color: blue;
 }
 
+#reglas div :last-child{
+    border-bottom: none;
+}
+
 .fila{
     display: flex;
     align-items: center;

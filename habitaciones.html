@@ -125,16 +125,18 @@
                 
                 Rancho Texas Park está a 8,2 km del alojamiento, y Lanzarote Golf Resort está a 10 km. El aeropuerto (Aeropuerto de Lanzarote) está a pocos pasos. <br><br>
 
-                A las parejas les encanta la ubicación — Le han puesto un 8,9 para viajes de dos personas. <br><br>
+                A las parejas les encanta la ubicación — Le han puesto un <span>8,9</span> para viajes de dos personas. <br><br>
             </p>
 
         </section>
 
+        <!-- SECCIONES -->
+
         <div id="seleccion">
-            <div><a href="#servicios" id="primera-seccion" class="opciones-seleccion" onclick="activarSección1()">Servicios</a></div>
-            <div><a href="#habitaciones" class="opciones-seleccion" onclick="activarSección2()">Habitaciones</a></div>
+            <div><a id="primera-seccion" class="opciones-seleccion" onclick="activarSección1()">Servicios</a></div>
+            <div><a class="opciones-seleccion" onclick="activarSección2()">Habitaciones</a></div>
             <div><a class="opciones-seleccion" onclick="activarSección3()">Reglas</a></div>
-            <div><a class="opciones-seleccion" onclick="activarSección4()">Otros</a></div>
+            <div><a class="opciones-seleccion" onclick="activarSección4()">Puntos de interés <ion-icon name="locate"></ion-icon></a></div>
         </div>
     </section>
 
@@ -179,9 +181,14 @@
                     <p>Baño privado</p>
                 </div>
 
-                <button id="mostrar-servicios"><ion-icon id="icono-mostrar-mas" name="add-circle-outline"></ion-icon> Mostrar más</button>
+                <div class="servicio">
+                    <ion-icon name="rose"></ion-icon>
+                    <p>Patio/Terraza</p>
+                </div>
             </div>
         </div>
+
+        <!-- HABITACIONES -->
 
         <div id="habitaciones" class="habitaciones">
             <div class="contenedor-habitacion">
@@ -229,14 +236,146 @@
             </div>
         </div>
 
+        <!-- REGLAS -->
+
         <div id="reglas" class="reglas">
             <p>reglas</p>
         </div>
 
-        <div id="otros" class="otros">
-            <p>otros</p>
+        <!-- PUNTOS DE INTERÉS -->
+
+        <!-- PONER UN MAPA DEBAJO DE LOS PUNTOS DE INTERÉS -->
+
+        <div id="puntos-interes" class="puntos-interes">
+            <div id="contenedor-lugares">
+                <div id="cercania">
+                    <h3><ion-icon name="walk"></ion-icon> ¿Qué hay cerca?</h3>
+                    <div>
+                        <p class="lugar">Playa Pocillos</p>
+                        <p class="km">2,8 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">HG Club Valena</p>
+                        <p class="km">2,9 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">San Marcial</p>
+                        <p class="km">3 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Sunseeker Club</p>
+                        <p class="km">3 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Los Corales</p>
+                        <p class="km">3 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Beatriz Playa</p>
+                        <p class="km">3 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">HG Guacimeta</p>
+                        <p class="km">3 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Malva Bungalows</p>
+                        <p class="km">3 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Comunidad Agua Dulce</p>
+                        <p class="km">2,9 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Las Marinas</p>
+                        <p class="km">3,1 km</p>
+                    </div>
+                </div>
+                <div id="atracciones">
+                    <h3><ion-icon name="bicycle"></ion-icon> Atracciones turísticas destacadas</h3>
+                    <div>
+                        <p class="lugar">Monumento al Campesino</p>
+                        <p class="km">7 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Museo Lagomar</p>
+                        <p class="km">10 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Jardín de Cactus</p>
+                        <p class="km">18 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Parque Nacional de Timanfaya</p>
+                        <p class="km">18 km</p>
+                    </div>
+                </div>
+                <div id="playas">
+                    <h3><ion-icon name="boat"></ion-icon> Playas en la zona</h3>
+                    <div>
+                        <p class="lugar">Playa de Guacimeta</p>
+                        <p class="km">450 m</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Playa de la Concha</p>
+                        <p class="km">1,3 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Playa del Cable</p>
+                        <p class="km">1,9 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Playa Lima</p>
+                        <p class="km">2,6 km</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Playa del Reducto</p>
+                        <p class="km">3,5 km</p>
+                    </div>
+                </div>
+
+                <div id="restaurantes">
+                    <h3><ion-icon name="restaurant"></ion-icon> Restaurantes y cafeterías</h3>
+                    <div>
+                        <p class="lugar">Cafetería/barTerraza · El Concorde</p>
+                        <p class="km">50 m</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Restaurante · Aguaviva</p>
+                        <p class="km">200 m</p>
+                    </div>
+                </div>
+                <div id="aeropuertos">
+                    <h3><ion-icon name="airplane"></ion-icon> Aeropuertos más cercanos</h3>
+                    <div>
+                        <p class="lugar">Aeropuerto de Lanzarote</p>
+                        <p class="km">150 m</p>
+                    </div>
+
+                    <div>
+                        <p class="lugar">Aeropuerto de Fuerteventura</p>
+                        <p class="km">60 km</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
 
     <!-- RESEÑAS -->
 
@@ -304,142 +443,39 @@
         </div>
     </section>
 
+    <!-- A TENER EN CUENTA -->
 
-    <!-- ALREDEDORES DEL ALOJAMIENTO -->
+    <section id="tener-en-cuenta">
+        <h3>A tener en cuenta</h3>
+        <h5>Información importante sobre el alojamiento</h5>
+        <div>
+            <p>Informa a Paradise room near the beach con antelación de tu hora prevista de llegada. Para ello, puedes utilizar el apartado de peticiones especiales al hacer la reserva o ponerte en contacto directamente con el alojamiento. Los datos de contacto aparecen en la confirmación de la reserva. <br><br>
 
-    <section id="alrededores">
-        <h3>Alrededores del alojamiento</h3>
-        <div id="contenedor-lugares">
-            <div id="cercania">
-                <h3><ion-icon name="walk"></ion-icon> ¿Qué hay cerca?</h3>
-                <div>
-                    <p class="lugar">Playa Pocillos</p>
-                    <p class="km">2,8 km</p>
-                </div>
+                En este alojamiento no se pueden celebrar despedidas de soltero o soltera ni fiestas similares. <br><br>
+                
+                No se puede hacer ruido de 23:00:00 a 07:00:00. <br><br>
+                
+                Si causas daños al alojamiento durante tu estancia, podrían pedirte un pago de hasta € 300 después del check-out, según las <a href="https://www.booking.com/content/terms.es.html?aid=304142&label=gen173nr-1FCAsoRkIXY2FzYS1tb250c2UtcGxheWEtaG9uZGFIM1gEaEaIAQKYAQq4ARjIARHYAQHoAQGIAgGoAgS4Aqu64q8GwAIB0gIkMjY3YjcxYmYtYzNlOS00NTc3LTk3YWYtNDkxZmE0NGM4YTZi2AIG4AIB&sid=c2d28f15538dcb2f3182582841595916#nov2021_terms_accommodations_know_subheading_5" target="_blank" rel="noopener noreferrer">condiciones sobre daños en el alojamiento</a>.</p>
+        </div>
+    </section>
 
-                <div>
-                    <p class="lugar">HG Club Valena</p>
-                    <p class="km">2,9 km</p>
-                </div>
+    <!-- ANFITRION -->
 
-                <div>
-                    <p class="lugar">San Marcial</p>
-                    <p class="km">3 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Sunseeker Club</p>
-                    <p class="km">3 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Los Corales</p>
-                    <p class="km">3 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Beatriz Playa</p>
-                    <p class="km">3 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">HG Guacimeta</p>
-                    <p class="km">3 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Malva Bungalows</p>
-                    <p class="km">3 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Comunidad Agua Dulce</p>
-                    <p class="km">2,9 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Las Marinas</p>
-                    <p class="km">3,1 km</p>
-                </div>
-            </div>
-            <div id="restaurantes">
-                <h3><ion-icon name="restaurant"></ion-icon> Restaurantes y cafeterías</h3>
-                <div>
-                    <p class="lugar">Cafetería/barTerraza · El Concorde</p>
-                    <p class="km">50 m</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Restaurante · Aguaviva</p>
-                    <p class="km">200 m</p>
-                </div>
-            </div>
-            <div id="playas">
-                <h3><ion-icon name="boat"></ion-icon> Playas en la zona</h3>
-                <div>
-                    <p class="lugar">Playa de Guacimeta</p>
-                    <p class="km">450 m</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Playa de la Concha</p>
-                    <p class="km">1,3 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Playa del Cable</p>
-                    <p class="km">1,9 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Playa Lima</p>
-                    <p class="km">2,6 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Playa del Reducto</p>
-                    <p class="km">3,5 km</p>
-                </div>
+    <div id="contenedor-anfitrion">
+        <div id="anfitrion">
+            <div id="resumen">
+                <h3>Información del anfitrión y del alojamiento</h3>
+                <p>Estamos encantados de tenerte en casa, nos esforzamos muchísimo por que te encuentres como en tu casa. Hacemos muchísimo hincapié en la limpieza y en los pequeños detalles. Somos muy sociables pero no disponemos de mucho tiempo para compartir con los huéspedes. Procuramos estar siempre disponibles para proporcionarte toda la información que necesites y resolver todas tus dudas.</p>
             </div>
 
-            <!-- Intercambiar restaurante por atracciones -->
-
-            <div id="atracciones">
-                <h3><ion-icon name="bicycle"></ion-icon> Atracciones turísticas destacadas</h3>
+            <div id="perfil">
+                <h3>Montserat Escudero Castañeda</h3>
                 <div>
-                    <p class="lugar">Monumento al Campesino</p>
-                    <p class="km">7 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Museo Lagomar</p>
-                    <p class="km">10 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Jardín de Cactus</p>
-                    <p class="km">18 km</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Parque Nacional de Timanfaya</p>
-                    <p class="km">18 km</p>
-                </div>
-            </div>
-            <div id="aeropuertos">
-                <h3><ion-icon name="airplane"></ion-icon> Aeropuertos más cercanos</h3>
-                <div>
-                    <p class="lugar">Aeropuerto de Lanzarote</p>
-                    <p class="km">150 m</p>
-                </div>
-
-                <div>
-                    <p class="lugar">Aeropuerto de Fuerteventura</p>
-                    <p class="km">60 km</p>
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/max500_ao/162540823.jpg?k=dd099b6bd0195383786dbe87360958d8d9a6f1b90c868107769b20406db4d294&o=" alt="">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -14,7 +14,7 @@ const flecha = document.getElementById("flechaDescripcion");
 var seccion1 = document.getElementById("servicios");
 var seccion2 = document.getElementById("habitaciones");
 var seccion3 = document.getElementById("reglas");
-var seccion4 = document.getElementById("otros");
+var seccion4 = document.getElementById("puntos-interes");
 
 var galeriaInicio = document.getElementById("galeria-inicio");
 
@@ -122,7 +122,7 @@ seccion3.classList.remove("activadoSeccion")
 seccion4.classList.remove("activadoSeccion")
 
 function activarSección1(){
-    galeriaInicio.style.marginTop = '0px';
+    galeriaInicio.style.marginTop = '15%';
     seccion1.classList.add("activadoSeccion")
     seccion2.classList.remove("activadoSeccion")
     seccion3.classList.remove("activadoSeccion")

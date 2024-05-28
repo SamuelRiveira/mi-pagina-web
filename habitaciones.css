@@ -151,6 +151,14 @@ body{
     border-bottom: solid 2px blue;
 }
 
+/* INFORMACION ALOJAMIENTO */
+
+#informacion-alojamiento{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
 /* SERVICIOS */
 
 #contenido{
@@ -457,5 +465,11 @@ body{
 @media (max-width: 1450px) {
     body{
         margin-top: 25%;
+    }
+}
+
+@media (max-width: 1366px){
+    body{
+        margin-top: 53%;
     }
 }

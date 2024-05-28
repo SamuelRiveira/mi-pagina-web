@@ -409,6 +409,65 @@ body{
 }
 
 
+/* REGLAS */
+
+#reglas{
+    border: 1px solid #D9D9D9;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+#reglas a{
+    color: blue;
+}
+
+.fila{
+    display: flex;
+    align-items: center;
+    border-bottom: #D9D9D9 solid 1px;
+}
+
+.contenedor-regla-titulo{
+    width: 350px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#camas-para-niños{
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 110px;
+}
+
+#camas-para-niños p{
+    align-self: center;
+    margin-top: 15px;
+}
+
+#camas .contenedor-regla{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0%;
+}
+
+.contenedor-regla{
+    width: 1704.750px;
+}
+
+#camas :nth-child(2){
+    margin-bottom: 15px;
+}
+
+.contenedor-regla span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
 /* PUNTOS DE INTERES */
 
 #puntos-interes{ 

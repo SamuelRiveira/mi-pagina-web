@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
 <body>
+    <div id="fondito" class="fondo"></div>
     <header>
         <a id="inicio" href="index.html"></a>
 
@@ -208,8 +209,14 @@
                         <p>x2 Personas <ion-icon name="person"></ion-icon><ion-icon name="person"></ion-icon></p>
                     </div>
                     <div class="ver-mas-habitacion">
-                        <a>Descubrir más</a>
+                        <a onclick="activarHabitacion1()">Descubrir más</a>
                     </div>
+                </div>
+                <div id="habitacion1" class="habitacion">
+                    <div id="icono-cierre" onclick="desactiveHabitacion1()"><ion-icon class="cierre" name="close"></ion-icon></div>
+                </div>
+                <div id="habitacion2" class="habitacion">
+                    <div id="icono-cierre" onclick="desactiveHabitacion2()"><ion-icon class="cierre" name="close"></ion-icon></div>
                 </div>
             </div>
 
@@ -230,7 +237,7 @@
                         <p>x2 Personas <ion-icon name="person"></ion-icon><ion-icon name="person"></ion-icon></p>
                     </div>
                     <div class="ver-mas-habitacion">
-                        <a>Descubrir más</a>
+                        <a onclick="activarHabitacion2()">Descubrir más</a>
                     </div>
                 </div>
             </div>

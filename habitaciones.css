@@ -6,6 +6,20 @@
     scroll-behavior: smooth;
 }
 
+.fondo{
+    display: none;
+}
+
+.fondo-oscuro{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    display: block;
+}
+
 body{
     position: relative;
     width: 100vw;
@@ -402,6 +416,44 @@ body{
     object-fit: cover;
     height: 50px;
     width: 100px;
+}
+
+.habitacion{
+    position: fixed;
+    top: 12.5%;
+    left: 24%;
+    width: 1000px;
+    height: 800px;
+    border-radius: 10px;
+    z-index: 99999;
+    scale: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 3px 10px rgb(133, 133, 133);
+    background-color: white;
+}
+
+.active-habitacion{
+    scale: 1;
+}
+
+#icono-cierre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    background-color: #D9D9D9;
+    width: 50px;
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+.cierre{
+    width: 30px;
+    height: 30px;
+    color: black;
 }
 
 

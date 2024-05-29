@@ -11,10 +11,17 @@ const moverImg = document.getElementById("imgDesc");
 const moverFlecha = document.getElementById("flechaDescripcion");
 const flecha = document.getElementById("flechaDescripcion");
 
+const fondo = document.getElementById("fondito");
+
 var seccion1 = document.getElementById("servicios");
 var seccion2 = document.getElementById("habitaciones");
 var seccion3 = document.getElementById("reglas");
 var seccion4 = document.getElementById("puntos-interes");
+
+var habitacion1 = document.getElementById("habitacion1")
+var habitacion2 = document.getElementById("habitacion2")
+
+
 
 function activar(){
     contenedor.classList.add("active");
@@ -176,4 +183,25 @@ function mostrarInformacion(xhr){
     
     document.getElementById("tiempo").innerHTML = codigoHTML;
     document.getElementById("tiempo2").innerHTML = codigoHTML;
+}
+
+
+function activarHabitacion1(){
+    habitacion1.classList.add("active-habitacion")
+    fondo.classList.add("fondo-oscuro")
+}
+
+function desactiveHabitacion1(){
+    habitacion1.classList.remove("active-habitacion")
+    fondo.classList.remove("fondo-oscuro")
+}
+
+function activarHabitacion2(){
+    habitacion2.classList.add("active-habitacion")
+    fondo.classList.add("fondo-oscuro")
+}
+
+function desactiveHabitacion2(){
+    habitacion2.classList.remove("active-habitacion")
+    fondo.classList.remove("fondo-oscuro")
 }

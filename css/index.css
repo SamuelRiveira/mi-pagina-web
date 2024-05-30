@@ -63,6 +63,7 @@ body{
     width: 500%;
     height: 500px;
     display: flex;
+    user-select: none;
 }
 
 .deslices input{
@@ -168,7 +169,7 @@ body{
 @media (max-width: 870px){
 
     .portada{
-        top: 25%;
+        top: 20%;
         gap: 5%;
     }
 
@@ -178,12 +179,12 @@ body{
 
     .navegacion-manual{
         
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     .navegacion-auto{
         
-        margin-top: 700px;
+        margin-top: 650px;
     }
 
     .deslices :nth-child(6) img{

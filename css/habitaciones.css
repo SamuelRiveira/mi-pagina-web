@@ -42,6 +42,7 @@ body{
     margin: 2% 5%;
     gap: 2%;
     overflow: hidden;
+    user-select: none;
 }
 
 .contenedor-galeria{

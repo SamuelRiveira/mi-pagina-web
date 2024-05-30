@@ -166,7 +166,35 @@ body{
     background: white;
 }
 
+@media (max-height: 925px){
+    .navegacion-manual{
+        
+        margin-top: 300px;
+    }
+
+    .navegacion-auto{
+        
+        margin-top: 800px;
+    }   
+}
+
+@media (max-height: 825px){
+    .navegacion-manual{
+        
+        margin-top: 150px;
+    }
+
+    .navegacion-auto{
+        
+        margin-top: 650px;
+    }   
+}
+
 @media (max-width: 870px){
+
+    body{
+        overflow: hidden;
+    }
 
     .portada{
         top: 20%;

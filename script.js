@@ -205,3 +205,40 @@ function desactiveHabitacion2(){
     habitacion2.classList.remove("active-habitacion")
     fondo.classList.remove("fondo-oscuro")
 }
+
+
+
+let xmlDoc;
+
+mostrar()
+function mostrar(){
+    let xhttp;
+
+    xhttp = new XMLHttpRequest();
+    xhttp.onload = function(){
+        mostrarInformacion(this);
+    }
+    xhttp.open("GET", "servicios.xml");
+    xhttp.send();
+}
+
+function mostrarInformacion(xml){
+    let i, codigoHTML, logo, contenido, servicio;
+
+    xmlDoc = xml.responseXML;
+    console.log(xmlDoc)
+    servicio = xmlDoc.getElementsByTagName("servicio").length;
+    codigoHTML = ""
+
+    for (i=0; i<servicio ; i++){
+        codigoHTML += '<div class="servicio">';
+        logo = xmlDoc.getElementsByTagName("logo")[i].childNodes[0].nodeValue;
+        contenido = xmlDoc.getElementsByTagName("contenido")[i].childNodes[0].nodeValue;
+        
+        codigoHTML +=   '<ion-icon name="'+logo+'"></ion-icon>' +
+                        '<p>'+contenido+'</p>' +
+                    '</div>';
+        
+    }
+    document.getElementById("resultado-servicios").innerHTML = codigoHTML;
+}

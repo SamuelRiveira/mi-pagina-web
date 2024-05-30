@@ -96,32 +96,15 @@
         </div>
     </div>
 
-
-    <section class="contacto">
-        <h2>Contact me!</h2>
-
-        <form action="#">
-            <div class="caja-input">
-                <div class="campo-input campo">
-                    <input type="text" placeholder="Complete name" 
-                    id="nombre" class="objeto" autocomplete="off">
-                </div>
-
-                <div class="campo-input campo">
-                    <input type="email" placeholder="Email" 
-                    id="email" class="objeto" autocomplete="off">
-                </div>
-            </div>
-
-            <div class="campo-textarea campo">
-                <textarea name="" id="mensaje" cols="30" rows="10"
-                placeholder="Your message" class="objeto"
-                autocomplete="off"></textarea>
-            </div>
-
-            <button id="enviar-mensaje" type="submit">Send message</button>
+    <section id="contacto">
+        <h1>Contact me!</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contactar">
+            <input type="hidden" name="access_key" value="a9485d88-2e71-421b-8d96-af493e53d511">
+            <input type="text" name="nombre" id="nombre" class="textos" placeholder="Complete name" required>
+            <input type="email" name="correo" id="correo" class="textos" placeholder="Email" required>
+            <textarea name="mensaje" id="mensaje" class="textos" placeholder="Your message" required></textarea>
+            <button id="enviar" type="submit">Send message</button>
         </form>
-
     </section>
     <script src="../script.js"></script>
 </body>

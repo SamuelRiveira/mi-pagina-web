@@ -654,6 +654,38 @@ body{
     margin-top: 30%;
 }
 
-@media (max-width: 1800px){
-    
+@media (max-width: 1810px){
+    body{
+        margin-top: 35%;
+    }
+}
+
+@media (max-width: 1600px){
+    body{
+        margin-top: 40%;
+    }
+}
+
+@media (max-width: 1400px){
+    body{
+        margin-top: 45%;
+    }
+}
+
+@media (max-width: 1300px){
+    body{
+        margin-top: 50%;
+    }
+}
+
+@media (max-width: 1200px){
+    body{
+        margin-top: 55%;
+    }
+}
+
+@media (max-width: 1020px){
+    body{
+        margin-top: 60%;
+    }
 }

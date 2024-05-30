@@ -14,7 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(62, 62, 63);
+    background-color: white;
 }
 
 #mensaje{
@@ -23,7 +23,7 @@ body{
 
 .contacto h2{
     font-size: 40px;
-    color: rgb(197, 161, 101);
+    color: black;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -43,14 +43,14 @@ body{
     width: 100%;
     padding: 3%;
     padding-left: 5%;
-    background: transparent;
-    border: 2px solid rgb(218, 192, 147);
+    border: 2px solid #757575;
     outline: none;
     border-radius: 6px;
     font-size: 16px;
-    color: rgb(228, 223, 223);
+    background-color: #D9D9D9;
+    color: black;
     margin: 12px 0;
-    box-shadow: 0 0 5px rgb(0, 0, 0);
+    box-shadow: 0 0 5px rgba(71, 71, 71, 0.414);
 }
 
 .campo{
@@ -58,7 +58,7 @@ body{
 }
 
 .campo .objeto::placeholder{
-    color: rgba(255, 255, 255, .3);
+    font-weight: 500;
 }
 
 .caja-input .campo-input{
@@ -73,14 +73,14 @@ body{
 
 form button{
     padding: 12px 32px;
-    background-color: rgb(218, 192, 147);
+    background-color: #D9D9D9;
     border: none;
     outline: none;
     border-radius: 6px;
     box-shadow: 0 0 5px rgb(0, 0, 0);
     cursor: pointer;
     font-size: 16px;
-    color: white;
+    color: #757575;
     transition: .3s;
 }
 

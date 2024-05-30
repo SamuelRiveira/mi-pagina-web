@@ -151,39 +151,42 @@ function activarSección4(){
 };
 
 
-let xhr, url, city, apiKey;
+document.addEventListener('DOMContentLoaded', (event) => {
+    let xhr, url, city, apiKey;
 
-city = "Playa Honda";
-apiKey = "7c5f20c2bf8231c37e559843a2cd4409";
+    city = "Playa Honda";
+    apiKey = "7c5f20c2bf8231c37e559843a2cd4409";
 
-url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey + "&units=metric";
+    url = "https://api.openweathermap.org/data/2.5/weather?q=" + encodeURIComponent(city) + "&appid=" + apiKey + "&units=metric";
 
-xhr = new XMLHttpRequest();
-xhr.onload = function(){
-    mostrarInformacion(this);
-}
-xhr.open("GET", url)
-xhr.send()
+    xhr = new XMLHttpRequest();
+    xhr.onload = function() {
+        mostrarInformacion(this);
+    };
+    xhr.open("GET", url);
+    xhr.send();
 
+    function mostrarInformacion(xhr) {
+        let obj, temp, icon, codigoHTML;
 
-function mostrarInformacion(xhr){
-    let obj, temp, icon, codigoHTML;
-    
-    console.log(xhr.responseText);
-    obj = JSON.parse(xhr.responseText)
-    temp = obj.main.temp;
-    icon = obj.weather[0].icon;
-    console.log(temp, icon)
+        if (xhr.status >= 200 && xhr.status < 300) { // Asegurarse de que la solicitud fue exitosa
+            console.log(xhr.responseText);
+            obj = JSON.parse(xhr.responseText);
+            temp = obj.main.temp;
+            icon = obj.weather[0].icon;
+            console.log(temp, icon);
 
-    codigoHTML = 
-                    '<p>'+ temp +'<sup>ºC</sup></p>' +
-                    '<img src="http://openweathermap.org/img/wn/'+ icon +'@2x.png">';
+            codigoHTML = 
+                '<p>' + temp + '<sup>ºC</sup></p>' +
+                '<img src="https://openweathermap.org/img/wn/' + icon + '@2x.png">';
 
-
-    
-    document.getElementById("tiempo").innerHTML = codigoHTML;
-    document.getElementById("tiempo2").innerHTML = codigoHTML;
-}
+            document.getElementById("tiempo").innerHTML = codigoHTML;
+            document.getElementById("tiempo2").innerHTML = codigoHTML;
+        } else {
+            console.error('Error al realizar la solicitud:', xhr.statusText);
+        }
+    }
+});
 
 
 function activarHabitacion1(){

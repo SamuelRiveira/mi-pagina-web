@@ -89,6 +89,7 @@ header{
 }
 
 .contenedor{
+    align-self: center;
     position: fixed;
     top: 25%;
     width: 440px;
@@ -407,6 +408,11 @@ header{
 
     .forma-caja .login-register p a{
         text-decoration: underline;
+    }
+
+    #idioma{
+        right: 100px;
+        margin-bottom: 5px;
     }
 
 }

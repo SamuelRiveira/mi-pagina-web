@@ -166,7 +166,9 @@ body{
 }
 
 @media (max-width: 870px){
+
     .portada{
+        top: 25%;
         gap: 5%;
     }
 
@@ -175,11 +177,13 @@ body{
     }
 
     .navegacion-manual{
-        margin-top: 250px;
+        
+        margin-top: 200px;
     }
 
     .navegacion-auto{
-        margin-top: 750px;
+        
+        margin-top: 700px;
     }
 
     .deslices :nth-child(6) img{

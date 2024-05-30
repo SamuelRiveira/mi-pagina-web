@@ -654,25 +654,5 @@ body{
 }
 
 @media (max-width: 1800px){
-    body{
-        margin-top: 35%;
-    }
-}
-
-@media (max-width: 1570px) {
-    body{
-        margin-top: 40%;
-    }
-}
-
-@media (max-width: 1370px){
-    body{
-        margin-top: 45%;
-    }
-}
-
-@media (max-width: 1270px){
-    body{
-        margin-top: 50%;
-    }
+    
 }

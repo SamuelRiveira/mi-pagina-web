@@ -245,3 +245,44 @@ function mostrarInformacion(xml){
     }
     document.getElementById("resultado-servicios").innerHTML = codigoHTML;
 }
+
+let indice = 0;
+
+document.querySelector('.prev-boton').addEventListener('click', () => {
+   navigate(-1);
+});
+
+document.querySelector('.next-boton').addEventListener('click', () => {
+   navigate(1);
+});
+
+function navigate(direction) {
+   const galeriaContenedor = document.querySelector('.galeria2-contenedor');
+   const totalImagenes = document.querySelectorAll('.galeria2-objeto').length;
+
+   indice = (indice + direction + totalImagenes) % totalImagenes;
+   const offset = -indice * 100;
+
+   galeriaContenedor.style.transform = `translateX(${offset}%)`;
+}
+
+
+let indice2 = 0;
+
+document.querySelector('.prev-boton2').addEventListener('click', () => {
+   navigate2(-1);
+});
+
+document.querySelector('.next-boton2').addEventListener('click', () => {
+   navigate2(1);
+});
+
+function navigate2(direction) {
+   const galeriaContenedor2 = document.querySelector('.galeria3-contenedor');
+   const totalImagenes2 = document.querySelectorAll('.galeria3-objeto').length;
+
+   indice2 = (indice2 + direction + totalImagenes2) % totalImagenes2;
+   const offset = -indice2 * 100;
+
+   galeriaContenedor2.style.transform = `translateX(${offset}%)`;
+}

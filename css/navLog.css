@@ -411,9 +411,13 @@ header{
     }
 
     #idioma{
-        
         right: 100px;
         margin-bottom: 5px;
     }
 
+}
+
+
+@media (max-width: 768px){
+    
 }

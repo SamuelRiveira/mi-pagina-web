@@ -450,6 +450,7 @@ body{
     border-bottom-left-radius: 10px;
     cursor: pointer;
     z-index: 1;
+    box-shadow: 0 1px 3px rgb(133, 133, 133);
 }
 
 .cierre{
@@ -962,5 +963,31 @@ body{
 
     #atributo-habitacion1{
         margin-bottom: 60px;
+    }
+
+    .habitacion{
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        scale: 1;
+    }
+
+    .prev-boton{
+        top: 17%;
+    }
+    
+    .next-boton{
+        top: 17%;
+    }
+
+    .active-habitacion{
+        top: 26%
+    }
+
+    .contenedor-imagen{
+       width: 100%;
+       height: 63%;
     }
 }

@@ -995,3 +995,34 @@ body{
         font-size: 15px;
     }
 }
+
+@media (max-width: 768px){
+
+    body{
+        margin-top: 105%;
+    }
+
+    #nombre-puntuacion :nth-child(2){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        display: none;
+    }
+
+    #informacion-alojamiento p{
+        font-size: 15px;
+    }
+
+    #galeria{
+        display: none;
+    }
+
+    #servicios div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #seleccion{
+        font-size: 11px;
+    }
+}
+

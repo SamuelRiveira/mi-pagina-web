@@ -935,7 +935,11 @@ body{
 
     .contenedor-habitacion img{
         width: 100%;
-        height: 60%;
+        height: 61%;
+    }
+
+    .galeria3-objeto .contenedor-imagen img{
+        height: 67%;
     }
 
     .tiempo img{
@@ -964,10 +968,11 @@ body{
     .habitacion{
         position: fixed;
         top: 100%;
-        left: 0;
-        width: 100%;
+        left: 1.5%;
+        width: 98%;
         height: 100%;
         scale: 1;
+        border-radius: 0px;
     }
 
     .prev-boton{
@@ -996,7 +1001,7 @@ body{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 400px){
 
     body{
         margin-top: 105%;

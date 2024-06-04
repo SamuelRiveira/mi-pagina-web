@@ -763,56 +763,6 @@ body{
 }
 
 
-/* ANFITRION */
-
-#contenedor-anfitrion{
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 70px;
-}
-
-#anfitrion{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    text-align: center;
-}
-
-#anfitrion div h3{
-    font-size: 25px;
-    margin-bottom: 32px;
-}
-
-#resumen{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25%;
-}
-
-#perfil{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25%;
-}
-
-#perfil div{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#perfil img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-
 /* FINAL */
 
 
@@ -1026,8 +976,20 @@ body{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    #servicios{
+        margin-bottom: 40%;
+    }
+
     #seleccion{
         font-size: 11px;
+    }
+
+    #reseña-contenedor{
+        grid-template-columns: 1fr;
+    }
+
+    #tener-en-cuenta div{
+        padding: 3%;
     }
 }
 

@@ -991,5 +991,14 @@ body{
     #tener-en-cuenta div{
         padding: 3%;
     }
+
+    .contenedor-regla-titulo{
+        width: 1300px;
+    }
+
+    #contenedor-lugares{
+        display: flex;
+        flex-direction: column;
+    }
 }
 

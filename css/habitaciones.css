@@ -1000,5 +1000,132 @@ body{
         display: flex;
         flex-direction: column;
     }
-}
 
+    .contenedor-habitacion{
+        height: 400px;
+        overflow: unset;
+    }
+
+    .contenedor-habitacion img{
+        border-radius: 14px;
+    }
+
+    .nombre-habitacion h4{
+        font-size: 15px;
+    }
+
+    .atributo-habitacion p{
+        font-size: 12px;
+        gap: 2px;
+        width: 100%;
+    }
+
+    .atributo-habitacion{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+    }
+
+    .nombre-habitacion p, .atributo-habitacion h4{
+        display: none;
+    }
+
+    .tiempo{
+        font-size: 15px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 7%;
+        width: 150px;
+    }
+
+    .tiempo img{
+        scale: 1;
+        margin-right: 15%;
+    }
+
+    .ver-mas-habitacion{
+        scale: 0.55;
+        margin-right: 14%;
+    }
+
+    .active-habitacion{
+        width: 100vw;
+    }
+
+    .galeria-habitacion{
+        height: 200px;
+    }
+
+    .contenedor-imagen{
+        height: 200px;
+    }
+
+    .galeria3-objeto .contenedor-imagen img{
+        height: 100%;
+    }
+
+    .contenedor-imagen img{
+        height: 100%;
+    }
+
+    #imagen1{
+        object-position: 0% -151px;
+    }
+
+    .prev-boton{
+        top: 40%;
+        scale: 0.7;
+    }
+    
+    .next-boton{
+        top: 40%;
+        scale: 0.7;
+    }
+
+    .nav-boton:hover {
+        scale: 0.7;
+    }
+
+    .grilla{
+        display: none;
+    }
+
+    .descripcion h3{
+        font-size: 15px;
+    }
+
+    .descripcion p{
+        font-size: 12px;
+    }
+
+    .descripcion :nth-child(2) {
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+
+    .servicios-habitacion{
+        font-size: 10px;
+        width: 150px;
+        margin-left: 10%;
+    }
+
+    .servicios-habitacion h3{
+        font-size: 15px;
+    }
+
+    .servicios-habitacion div{
+        grid-template-columns: 1fr;
+    }
+
+    #icono-cierre{
+        width: 35px;
+        height: 35px;
+    }
+
+    .cierre{
+        width: 20px;
+        height: 20px;
+    }
+
+}
